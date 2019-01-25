@@ -1,13 +1,6 @@
-first_name = Faker::Name.first_name
-last_name = Faker::Name.last_name
-
-contact = Contact.new(
-                      first_name: first_name,
-                      last_name: last_name,
-                      email: Faker::Internet.free_email("#{first_name}.#{last_name}"),
-                      phone_number: Faker::PhoneNumber.phone_number
-                     )
-
-contact.save
-
-#We can set this code inside of a loop and get x amount of contacts. 
+Contact.create!([
+  {first_name: "Leo", last_name: "Gonzalez", email: "123@gmail.com", phone_number: "312-800-4321", middle_name: nil, bio: nil},
+  {first_name: "Marilee", last_name: "Connelly", email: "connelly_marilee@hotmail.com", phone_number: "912-158-0438", middle_name: nil, bio: nil},
+  {first_name: "Jerry", last_name: "Jimenez", email: "jerry.j@gmail.com", phone_number: "223-890-4435", middle_name: nil, bio: nil},
+  {first_name: "Homer", last_name: "Simpson", email: "", phone_number: "", middle_name: "", bio: ""}
+])
