@@ -22,6 +22,7 @@ class Api::ContactsController < ApplicationController
   end
 
   def show
+    @current_user = current_user
     @contact = Contact.find(params[:id])
     render 'show.json.jbuilder'
   end
