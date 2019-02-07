@@ -20,5 +20,3 @@ ContactGroup.create!(contact_id: 2,group_id: 3)
 ContactGroup.create!(contact_id: 3,group_id: 1)
 ContactGroup.create!(contact_id: 3,group_id: 2)
 ContactGroup.create!(contact_id: 4,group_id: 2)
-
-C
